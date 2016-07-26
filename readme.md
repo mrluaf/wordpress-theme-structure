@@ -21,8 +21,8 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 
 ## How To Use
 
-* Upload the Wordpress Theme Structure folder to your themes directory
-* Rename the folder and change the name and other details in styles.css, if desired
+* Upload the Wordpress Theme Structure folder to your themes directory.
+* Rename the folder and change the name and other details in styles.css, if desired.
 * Code away! Add, change and remove things in pursuit of theme perfection.
 
 ## Considerations
