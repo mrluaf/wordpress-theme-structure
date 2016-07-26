@@ -6,13 +6,13 @@ add_action( 'wp_enqueue_scripts', 'enqueue_scripts_styles' );
 
 function enqueue_scripts_styles() {
 
-	// style.css
-	wp_register_style('style', get_stylesheet_directory_uri() . '/style.css' );
-	wp_enqueue_style('style');
-
 	// scripts.js
 	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
 	wp_enqueue_script('scripts');
+
+	// style.css
+	wp_register_style('style', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_style('style');
 
 }
 
