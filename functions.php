@@ -41,9 +41,9 @@ function create_sidebars() {
         'name' => 'Sidebar',
         'id' => 'sidebar',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</li>',
-		'before_title'  => '<h3 class="widgettitle">',
-		'after_title'   => '</h3>',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>'
     ) );
 
 }

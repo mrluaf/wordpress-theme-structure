@@ -6,7 +6,7 @@
 
     <link rel="shortcut icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png"/>
 
-    <title><?php wp_title(); ?></title>
+    <title><?php bloginfo('name'); ?></title>
 
     <?php wp_head(); ?>
 
