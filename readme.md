@@ -17,7 +17,7 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 * screenshot.png placeholder image
 * sidebar.php with code to create a dynamic sidebar
 * single.php that pulls in title and content
-* styles.php that includes normalize.css and a few basic styles for formatting and responsiveness, as well as a media query to unmobile your styles for tablet and desktop
+* styles.css that includes normalize.css and a few basic styles for formatting and responsiveness, as well as a media query to unmobile your styles for tablet and desktop
 
 ## How To Use
 
