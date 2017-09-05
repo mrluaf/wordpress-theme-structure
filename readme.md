@@ -11,13 +11,13 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 * htaccess.txt for renaming to .htaccess
 * images folder with placeholder images for the favicon and logo
 * index.php that pulls in title and content
-* js folder with scripts.js that includes document ready
+* js folder with scripts.js that includes document ready function
 * page.php that pulls in title and content
 * page-home.php template for the home page, including a wp_query for posts
 * screenshot.png placeholder image
 * sidebar.php with code to create a dynamic sidebar
 * single.php that pulls in title and content
-* style.php that includes normalize.css and a few basic styles for formatting and responsiveness, as well as a media query to unmobile your styles for tablet and desktop
+* styles.php that includes normalize.css and a few basic styles for formatting and responsiveness, as well as a media query to unmobile your styles for tablet and desktop
 
 ## How To Use
 
@@ -29,9 +29,25 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 
 * Custom post types and taxonomies are not included in functions.php, as it's a better practice to include them as a plugin. Check out my [Wordpress Custom Post Types and Taxonomies Plugin](https://github.com/asheabbott/wordpress-custom-post-types-taxonomies) if you're looking for an easy way to build that out.
 * Custom meta boxes are not included in functions.php, as it's better practice to include them as a plugin. Check out my [Wordpress Meta Boxes Plugin](https://github.com/asheabbott/wordpress-meta-boxes) if you're looking for an easy way to build that out.
-* My Wordpress Theme Structure does not include comments functionality, as I tend not to use them, but they can be easily included by adding `<?php comments_template(); ?>` to the single.php file.
+* My Wordpress Theme Structure does not include comments functionality, as I tend not to use them, but they can be easily included by adding `<?php comments_template(); ?>` where you want them to appear in the single.php file.
 
 ### Changelog
 
-####v1.0
+#### v1.1
+
+* PHP: (header.php) Added social meta tags
+* PHP: (header.php) Changed `#logo` and `#content` to classes
+* PHP: (footer.php) Added copyright line with auto-updating year
+* PHP: (functions.php) Added some comments; updated file name in main stylesheet enqueue
+* PHP: (page.php) Removed "post" class
+* JS:  Added comments in document ready function
+* CSS: Renamed "style.css" to "styles.css"
+* CSS: Organized style.css file using ITCSS methodology
+* CSS: Updated normalize.css to v7.0.0
+* CSS: Removed the asterisk universal selector rule that was applying `box-sizing: border-box` to everything
+* CSS: Reduced "unmobile" breakpoint from 768px to 600px
+* ETC: Updated readme.md
+
+
+#### v1.0
 Initial commit.

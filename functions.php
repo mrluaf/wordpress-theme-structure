@@ -1,6 +1,6 @@
 <?php
 
-// enqueue scripts + styles
+// enqueue scripts and styles
 
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts_styles' );
 
@@ -11,15 +11,18 @@ function enqueue_scripts_styles() {
 	wp_enqueue_script('scripts');
 
 	// style.css
-	wp_register_style('style', get_stylesheet_directory_uri() . '/style.css' );
-	wp_enqueue_style('style');
+	wp_register_style('styles', get_stylesheet_directory_uri() . '/styles.css' );
+	wp_enqueue_style('styles');
 
 }
 
-// add featured image support + image sizes
 
-add_theme_support('post-thumbnails'); 
-// add_image_size('square', 1200, 1200); 
+// add featured image support and image sizes
+
+add_theme_support('post-thumbnails');
+
+// image sizes can be defined like this: add_image_size('square', 1200, 1200);
+
 
 // create menus
 
@@ -30,6 +33,7 @@ function create_menus() {
   register_nav_menu('main-menu', 'Main Menu');
 
 }
+
 
 // create sidebars
 
