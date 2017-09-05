@@ -31,6 +31,12 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 * Custom meta boxes are not included in functions.php, as it's better practice to include them as a plugin. Check out my [Wordpress Meta Boxes Plugin](https://github.com/asheabbott/wordpress-meta-boxes) if you're looking for an easy way to build that out.
 * My Wordpress Theme Structure does not include comments functionality, as I tend not to use them, but they can be easily included by adding `<?php comments_template(); ?>` where you want them to appear in the single.php file.
 
+### Potential Roadmap for Future Updates
+
+* Responsive grid / column layout
+* Font Awesome integration
+* Forking for more robust theme development
+
 ### Changelog
 
 #### v1.1
