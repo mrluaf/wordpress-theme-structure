@@ -2,7 +2,7 @@
 
 Hit the ground running the next time you hand code a Wordpress theme using my phone-first Wordpress Theme Structure. This is a very minimal theme skeleton that includes all the things I tend to use in most themes, allowing me to move through the repetitive bits more quickly, so I can jump into building out the custom parts of the theme.
 
-### Includes
+## Includes
 
 * 404.php with a basic not found message
 * footer.php
@@ -31,16 +31,14 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 * Custom meta boxes are not included in functions.php, as it's better practice to include them as a plugin. Check out my [Wordpress Meta Boxes Plugin](https://github.com/asheabbott/wordpress-meta-boxes) if you're looking for an easy way to build that out.
 * My Wordpress Theme Structure does not include comments functionality, as I tend not to use them, but they can be easily included by adding `<?php comments_template(); ?>` where you want them to appear in the single.php file.
 
-### Potential Roadmap for Future Updates
+## Changelog
 
+### Potential Roadmap for Future Updates
 * Responsive grid / column layout
 * Font Awesome integration
 * Forking for more robust theme development
 
-### Changelog
-
-#### v1.1
-
+### v1.1
 * PHP: (header.php) Added social meta tags
 * PHP: (header.php) Changed `#logo` and `#content` to classes
 * PHP: (footer.php) Added copyright line with auto-updating year
@@ -55,5 +53,5 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 * ETC: Updated readme.md
 
 
-#### v1.0
+### v1.0
 Initial commit.
