@@ -3,7 +3,9 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
+	<title><?php bloginfo('name'); ?></title>
+    
     <!-- social metas -->
 	<meta property="og:title" content="<?php echo get_the_title(); ?>">
 	<meta property="og:type" content="website">
@@ -15,16 +17,14 @@
 
     <link rel="shortcut icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png" />
 
-    <title><?php bloginfo('name'); ?></title>
-
-    <?php wp_head(); ?>
-
     <script>
 		// put google analytics code here
 
 		// site visits longer than 45 seconds do not count as bounces
     	setTimeout("ga('send', 'event', 'unbounce', '45_sec')", 45000);
 	</script>
+    
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 	<header>
