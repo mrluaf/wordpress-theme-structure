@@ -17,12 +17,12 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 * screenshot.png placeholder image
 * sidebar.php with code to create a dynamic sidebar
 * single.php that pulls in title and content
-* styles.css that includes normalize.css and a few basic styles for formatting and responsiveness, as well as a media query to unmobile your styles for tablet and desktop
+* style.css that includes normalize.css and a few basic styles for formatting and responsiveness, as well as a media query to unmobile your styles for tablet and desktop
 
 ## How To Use
 
 * Upload the Wordpress Theme Structure folder to your themes directory.
-* Rename the folder and change the name and other details in styles.css, if desired.
+* Rename the folder and change the name and other details in style.css, if desired.
 * Code away! Add, change and remove things in pursuit of theme perfection.
 
 ## Considerations
@@ -42,10 +42,9 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 * PHP: (header.php) Added social meta tags
 * PHP: (header.php) Changed `#logo` and `#content` to classes
 * PHP: (footer.php) Added copyright line with auto-updating year
-* PHP: (functions.php) Added some comments; updated file name in main stylesheet enqueue
+* PHP: (functions.php) Added some comments
 * PHP: (page.php) Removed "post" class
 * JS:  Added comments in document ready function
-* CSS: Renamed "style.css" to "styles.css"
 * CSS: Organized style.css file using ITCSS methodology
 * CSS: Updated normalize.css to v7.0.0
 * CSS: Removed the asterisk universal selector rule that was applying `box-sizing: border-box` to everything
