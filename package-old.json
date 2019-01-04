@@ -1,0 +1,37 @@
+{
+  "name": "asam-why-i-treat-microsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batescreative/18-asam-0170-wit-campaign-microsite.git"
+  },
+  "author": "Ashe Abbott for Bates Creative",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batescreative/18-asam-0170-wit-campaign-microsite/issues"
+  },
+  "homepage": "https://github.com/batescreative/18-asam-0170-wit-campaign-microsite#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inject": "^4.3.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.4.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  }
+}
