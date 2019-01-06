@@ -1,2 +1,2 @@
-jQuery(function(s){s("nav").find("li").each(function(){var i=s(this),h=s(i).find("a"),t=s(i).height(),n=s(h).width(),c=s(h).height();s(i).css({width:n+2}),s(h).css({top:(t-c)/2})})});
+"use strict";var _jquery=_interopRequireDefault(require("jquery"));function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}(0,_jquery.default)(function(){console.log("test")});
 //# sourceMappingURL=maps/scripts.js.map
