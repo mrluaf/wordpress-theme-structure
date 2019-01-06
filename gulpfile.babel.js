@@ -125,9 +125,9 @@ const server = (cb) => {
 
   // FIX WATCH TASKS
 
-  watch('./src/scss/*.scss', ['compileSass', reload]);
-  watch('./src/js/*.js', ['compileJS', reload]);
-  watch('./*.php').on('change', reload);
+  // watch('./src/scss/*.scss', ['compileSass', reload]);
+  // watch('./src/js/*.js', ['compileJS', reload]);
+  // watch('./*.php').on('change', reload);
 };
 
 const defaultTask = (cb) => {
