@@ -8,6 +8,8 @@ import concat from 'gulp-concat'
 import del from 'del'
 import fs from 'fs'
 import imagemin from 'gulp-imagemin'
+import mozjpeg from 'imagemin-mozjpeg'
+import pngquant from 'imagemin-pngquant'
 import inject from 'gulp-inject'
 import notify from 'gulp-notify'
 import sass from 'gulp-sass'
@@ -107,7 +109,17 @@ const processIMG = (cb) => {
   })
 
   gulp.src('src/images/**/*.{png,jpg}')
-    .pipe(imagemin())
+    .pipe(imagemin([
+      mozjpeg({
+        quality: 80
+      }),
+      pngquant({
+        speed: 1,
+        strip: true,
+        quality: [0.8, 0.8]
+      })], {
+      verbose: true
+    }))
     .pipe(gulp.dest('images'))
     .pipe(notify({
       message: 'IMG Status: Optimized'

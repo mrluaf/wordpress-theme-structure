@@ -1,0 +1,12 @@
+
+*** remember: TEMPLATE - for public consumption ***
+
+* update readme.md changelog as items are completed
+
+- check / adjust scss rules
+- add gutenberg support
+- update remainder of readme.md file, especially "included" section
+- update readme.md to include instructions for running gulp processes
+
+
+updated 03.23.19

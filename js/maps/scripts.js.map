@@ -1,1 +1,1 @@
-{"version":3,"sources":["scripts.js"],"names":["_jquery","_interopRequireDefault","require","default","console","log"],"mappings":"aAAA,IAAAA,QAAAC,uBAAAC,QAAA,oFAAA,EAAAF,QAAAG,SAAA,WAIIC,QAAQC,IAAI","file":"../scripts.js","sourcesContent":["import $ from 'jquery'\n\n$(() => {\n    \n    console.log('test')\n\n})\n"]}
+{"version":3,"sources":["scripts.js"],"names":["$"],"mappings":"aAAAA,EAAE","file":"../scripts.js","sourcesContent":["$(() => {\n\n\t// document ready\n\n});"]}

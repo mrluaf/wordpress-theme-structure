@@ -35,8 +35,21 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 
 ### Potential Roadmap for Future Updates
 * Responsive grid / column layout
-* Font Awesome integration
-* Forking for more robust theme development
+
+### v2.0
+* ALL: Modernized theme structure to utilize Babel, BrowserSync, ECMAScript 6 (ES 6), Gulp, ImageMin, ImageMin - MozJpeg, ImageMin - PNGQuant, Node / NPM, Sass, SVG sprites
+* ALL: Updated files to use two spaces for indentation instead of four spaces
+* PHP: (functions.php) Add Google Fonts integration
+* PHP: (functions.php) Add Font Awesome integration
+* PHP: (functions.php) Deregister standard jQuery and jQuery Migrate versions, update to jQuery 3.3.1 and jQuery Migrate 3.0.1
+* PHP: (header.php) Updated social meta description tag to use the_excerpt() rather than the_content()
+* PHP: (header.php) Updated social meta tags to prevent countable() error on PHP 7.2 caused by calling the_excerpt() outside the loop
+* PHP: (header.php) Change logo placeholder from image to SVG
+* CSS: Discontinue use of ITCSS methodology with shift to Sass
+* CSS: CSS: Updated normalize.css to v8.0.1
+* CSS: ***Make note about update breakpoints***
+* ETC: (screenshot.png) Updated from white background with no text to grey background with "screenshot" text
+* ETC: (readme.md) Updated throughout
 
 ### v1.1
 * PHP: (header.php) Added social meta tags
