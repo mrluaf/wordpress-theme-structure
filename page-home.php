@@ -8,10 +8,10 @@ $args = array (
 	'posts_per_page' => 10
 );
 
-$query = new WP_Query( $args );
+$query = new WP_Query($args);
 
-if ( $query->have_posts() ) {
-	while ( $query->have_posts() ) {
+if ($query->have_posts()) {
+	while ($query->have_posts()) {
 		$query->the_post(); ?>
 
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

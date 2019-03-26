@@ -5,7 +5,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: $content-max;
   margin: 0 auto;
   padding: 0 30px;
   box-sizing: border-box;

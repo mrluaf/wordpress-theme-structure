@@ -21,6 +21,7 @@ const reload = browserSync.reload
 
 // compile scss
 const compileSass = (cb) => {
+  // theme styles
   gulp.src('src/scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -35,7 +36,24 @@ const compileSass = (cb) => {
     .pipe(gulp.dest('css'))
     .pipe(browserSync.stream())
     .pipe(notify({
-      message: 'SASS Status: Compiled'
+      message: 'SASS Status: Theme Styles Compiled'
+    }))
+  
+    gulp.src('src/scss/editor-styles.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      outputStyle: 'expanded',
+      sourceComments: 'map',
+      sourceMap: 'sass',
+      outputStyle: 'nested'
+    }).on('error', sass.logError))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write('maps'))
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.stream())
+    .pipe(notify({
+      message: 'SASS Status: Editor Styles Compiled'
     }))
   
   cb()

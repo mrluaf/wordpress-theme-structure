@@ -1,7 +1,7 @@
-	</div>
+	</main>
 
 	<footer>
-		&copy; <?php echo date("Y"); ?> All rights reserved.
+		&copy; <?php echo date('Y'); ?> All rights reserved.
 	</footer>
 
 <?php wp_footer(); ?> 

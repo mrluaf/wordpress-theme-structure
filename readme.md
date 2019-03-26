@@ -1,9 +1,10 @@
 # Wordpress Theme Structure
 
-Hit the ground running the next time you hand code a Wordpress theme using my phone-first Wordpress Theme Structure. This is a very minimal theme skeleton that includes all the things I tend to use in most themes, allowing me to move through the repetitive bits more quickly, so I can jump into building out the custom parts of the theme.
+Hit the ground running the next time you hand code a Wordpress theme using my phone-first Wordpress Theme Structure. This is a very minimal theme skeleton that includes all the things I tend to use in most themes. This theme structure allows me to move through the repetitive bits more quickly, so I can jump into building out the custom parts of the theme.
 
 ## Includes
 
+* Gulp automation processes that support ECMAScript 6 (ES 6), Sass, image compression, SVG sprite creation and insertion
 * 404.php with a basic not found message
 * footer.php
 * functions.php with code to enqueue scripts and styles, add featured image support and thumbnail sizes, create a Wordpress menu and create a dynamic sidebar
@@ -39,15 +40,15 @@ Hit the ground running the next time you hand code a Wordpress theme using my ph
 ### v2.0
 * ALL: Modernized theme structure to utilize Babel, BrowserSync, ECMAScript 6 (ES 6), Gulp, ImageMin, ImageMin - MozJpeg, ImageMin - PNGQuant, Node / NPM, Sass, SVG sprites
 * ALL: Updated files to use two spaces for indentation instead of four spaces
-* PHP: (functions.php) Add Google Fonts integration
-* PHP: (functions.php) Add Font Awesome integration
-* PHP: (functions.php) Deregister standard jQuery and jQuery Migrate versions, update to jQuery 3.3.1 and jQuery Migrate 3.0.1
+* PHP: (functions.php) Deregistered standard jQuery and jQuery Migrate versions, updated to jQuery 3.3.1 and jQuery Migrate 3.0.1
+* PHP: (functions.php) Added support for block editor (Gutenberg) features
+* PHP: (functions.php) Added Google Fonts integration
+* PHP: (functions.php) Added Font Awesome integration
+* PHP: (header.php) Changde logo placeholder from image to SVG
 * PHP: (header.php) Updated social meta description tag to use the_excerpt() rather than the_content()
 * PHP: (header.php) Updated social meta tags to prevent countable() error on PHP 7.2 caused by calling the_excerpt() outside the loop
-* PHP: (header.php) Change logo placeholder from image to SVG
-* CSS: Discontinue use of ITCSS methodology with shift to Sass
-* CSS: CSS: Updated normalize.css to v8.0.1
-* CSS: ***Make note about update breakpoints***
+* CSS: Discontinued use of ITCSS methodology with shift to Sass
+* CSS: Updated normalize.css to v8.0.1
 * ETC: (screenshot.png) Updated from white background with no text to grey background with "screenshot" text
 * ETC: (readme.md) Updated throughout
 

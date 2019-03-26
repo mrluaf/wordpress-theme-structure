@@ -21,7 +21,7 @@
 		// put google analytics code here
 
 		// site visits longer than 45 seconds do not count as bounces
-    setTimeout("ga('send', 'event', 'unbounce', '45_sec')", 45000);
+    // setTimeout("ga('send', 'event', 'unbounce', '45_sec')", 45000);
 	</script>
     
   <?php wp_head(); ?>
@@ -36,7 +36,7 @@
 
 	<header>
 		<a class="logo" href="/"><svg><use xlink:href="#logo" /></svg></a>
-		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+		<?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
 	</header>
 
-	<div class="content">
+	<main>
