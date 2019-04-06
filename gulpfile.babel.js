@@ -110,10 +110,16 @@ const processSVG = (cb) => {
       }
     }))
     .pipe(gulp.dest('.'))
+    .pipe(notify({
+      message: 'Sprite SVG Status: Injected'
+    }))
 
   // copy non-sprite svgs to images directory
   gulp.src('src/images/*.svg')
     .pipe(gulp.dest('images'))
+    .pipe(notify({
+      message: 'Non-Sprite SVG Status: Copied'
+    }))
   
   cb()
 }
@@ -149,7 +155,7 @@ const processIMG = (cb) => {
 // run browsersync server and watch code for updates
 const server = (cb) => {
   browserSync.init({
-    proxy: 'ashexyz.local' // adjust to match your dev environment
+    proxy: 'dev.local' // adjust to match your dev environment
   })
 
   watch('./src/scss/*.scss', series('compileSass', reload))

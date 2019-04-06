@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/asheabbott/wordpress-theme-structure#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
     "@babel/register": "^7.4.0",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
