@@ -8,11 +8,11 @@ function enqueue_scripts_styles() {
 
 	// update jquery
 	wp_deregister_script('jquery-core');
-	wp_register_script('jquery-core', 'https://code.jquery.com/jquery-3.3.1.min.js', array(), '3.3.1');
+	wp_register_script('jquery-core', 'https://code.jquery.com/jquery-3.4.1.min.js', array(), '3.4.1');
 
 	// update jquery migrate
 	wp_deregister_script('jquery-migrate');
-	wp_register_script('jquery-migrate','https://code.jquery.com/jquery-migrate-3.0.1.min.js', array(), '3.0.1');
+	wp_register_script('jquery-migrate','https://code.jquery.com/jquery-migrate-3.1.0.min.js', array(), '3.1.0');
 
 	// scripts.js
 	wp_enqueue_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
