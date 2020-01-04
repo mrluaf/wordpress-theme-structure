@@ -36,7 +36,8 @@ const compileSass = (cb) => {
     .pipe(gulp.dest('css'))
     .pipe(browserSync.stream())
     .pipe(notify({
-      message: 'SASS Status: Theme Styles Compiled'
+      message: 'SASS Status: Theme Styles Compiled',
+      onLast: true
     }))
   
     gulp.src('src/scss/editor-styles.scss')
@@ -53,7 +54,8 @@ const compileSass = (cb) => {
     .pipe(gulp.dest('css'))
     .pipe(browserSync.stream())
     .pipe(notify({
-      message: 'SASS Status: Editor Styles Compiled'
+      message: 'SASS Status: Editor Styles Compiled',
+      onLast: true
     }))
   
   cb()
@@ -70,7 +72,8 @@ const compileJS = (cb) => {
     .pipe(gulp.dest('js'))
     .pipe(browserSync.stream())
     .pipe(notify({
-      message: 'JS Status: Compiled'
+      message: 'JS Status: Compiled',
+      onLast: true
     }))
 
     cb()
@@ -111,14 +114,16 @@ const processSVG = (cb) => {
     }))
     .pipe(gulp.dest('.'))
     .pipe(notify({
-      message: 'Sprite SVG Status: Injected'
+      message: 'Sprite SVG Status: Injected',
+      onLast: true
     }))
 
   // copy non-sprite svgs to images directory
   gulp.src('src/images/*.svg')
     .pipe(gulp.dest('images'))
     .pipe(notify({
-      message: 'Non-Sprite SVG Status: Copied'
+      message: 'Non-Sprite SVG Status: Copied',
+      onLast: true
     }))
   
   cb()
@@ -146,7 +151,8 @@ const processIMG = (cb) => {
     }))
     .pipe(gulp.dest('images'))
     .pipe(notify({
-      message: 'IMG Status: Optimized'
+      message: 'IMG Status: Optimized',
+      onLast: true
     }))
   
   cb()
