@@ -2,6 +2,10 @@
 
 Hit the ground running the next time you hand code a WordPress theme using my WordPress Theme Structure. This is a very minimal theme skeleton that includes all the things I tend to use in most themes. This theme structure allows me to move through the repetitive bits more quickly, so I can jump into building out the custom parts of the theme.
 
+## Update News
+
+04-28-2021: I'll be releasing a fairly major update for this theme skeleton as soon as possible.
+
 ## Includes
 
 * **404.php** with a basic not found message
