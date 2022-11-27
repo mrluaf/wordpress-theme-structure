@@ -86,3 +86,14 @@ Hit the ground running the next time you hand code a WordPress theme using my Wo
 
 ### v1.0
 Initial commit.
+
+
+
+## Gen POT Language
+
+```sh
+wp i18n make-pot . languages/lancerteam.pot
+```
+
+See more here: https://developer.wordpress.org/cli/commands/i18n/make-pot/
+How to install wp-cli: https://make.wordpress.org/cli/handbook/guides/installing/#installing-on-windows

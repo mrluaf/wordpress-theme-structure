@@ -1,11 +1,15 @@
 <?php get_header(); ?>
 
-<div class="post 404">
+<?php
+echo '
+	<div class="post 404">
 
-	<h2>Oops! That page can't be found.</h2>
-	<p>It looks like nothing was found at this location.</p>
+		<h2>' . esc_html__("Oops! That page can't be found.", "lancerteam") . '</h2>
+		<p>' . esc_html__("It looks like nothing was found at this location.", "lancerteam") . '</p>
 
-</div>
+	</div>
+';
+?>
 
 <?php get_sidebar(); ?>
 

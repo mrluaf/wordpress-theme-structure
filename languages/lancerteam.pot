@@ -1,0 +1,43 @@
+# Copyright (C) 2022 Nguyen Van Tai
+# This file is distributed under the .
+msgid ""
+msgstr ""
+"Project-Id-Version: Wordpress Theme Structure 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wordpress-theme-structure\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-11-27T02:33:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: lancerteam\n"
+
+#. Theme Name of the theme
+msgid "Wordpress Theme Structure"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://github.com/mrluaf/wordpress-theme-structure.git"
+msgstr ""
+
+#. Description of the theme
+msgid "Wordpress theme structure for efficient hand coding of a custom theme."
+msgstr ""
+
+#. Author of the theme
+msgid "Nguyen Van Tai"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://nguyenvantai.vn"
+msgstr ""
+
+#: 404.php:7
+msgid "Oops! That page can't be found."
+msgstr ""
+
+#: 404.php:8
+msgid "It looks like nothing was found at this location."
+msgstr ""

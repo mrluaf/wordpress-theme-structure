@@ -1,5 +1,41 @@
 <?php
 
+
+// CHANGE LOCAL LANGUAGE
+// must be called before load_theme_textdomain()
+
+/*
+you can use this example if you wish to switch theme language using a variable passed within the URL, 
+for example to load the Tamazikht language, your URL would look like; 
+www.example.com/?l=tz_MA, this will search for a .mo file with name tz_MA.mo in the language directory 
+inside your theme.
+*/
+
+add_filter( 'locale', 'wpdocs_theme_localized' );
+if (!function_exists('wpdocs_theme_localized')) {
+	/**
+	 * Switch to locale given as query parameter l, if present
+	 */
+	function wpdocs_theme_localized( $locale )
+	{
+		if ( isset( $_GET['l'] ) )
+		{
+			return sanitize_key( $_GET['l'] );
+		}
+
+		return $locale;
+	}
+}
+
+# ADD Localization Folder
+# See more here: https://developer.wordpress.org/reference/functions/load_theme_textdomain/
+add_action('after_setup_theme', 'language_theme_setup');
+if (!function_exists('language_theme_setup')) {
+	function language_theme_setup(){
+    load_theme_textdomain('lancerteam', get_template_directory() . '/languages');
+	}
+}
+
 // enqueue scripts and styles
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts_styles');
